@@ -10,24 +10,41 @@
 </head>
 
 <body>
-    <h1>BEM Wars</h1>
+    <h1 class="header">BEM Wars</h1>
     <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+        <div class="card card--dark">
+            <h2 class="card__header card__header--dark">The Dark Side</h2>
+            <img src="./images/vader.jpeg" class="card__img card__img--dark">
+            <p class="card__text card__text--dark">Nesting!</p>
+            <p class="card__text card__text--dark">Conflict!</p>
+            <p class="card__text card__text--dark">Specificity Wars!</p>
+            <p class="card__text card__text--dark">Cookies</p>
         </div>
 
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+        <div class="card card--light">
+            <h2 class="card__header card__header--light">The Force</h2>
+            <img src="./images/yoda.jpeg" class="card__img card__img--light">
+            <p class="card__text card__text--light">Love</p>
+            <p class="card__text card__text--light">Beauty</p>
+            <p class="card__text card__text--light">CSS that Scales!</p>
+            <p class="card__text card__text--light">Great warrior. Wars not make one great!</p>
+        </div>
+        <div class="card card--yolo">
+            <h2 class="card-header" class="card__header card__header--yolo">Crypto-Bro!</h2>
+            <img class="card__img card__img--yolo" src="./images/break-dance.png">
+            <p class="card__text card__text--yolo">Bro!</p>
+            <p class="card__text card__text--yolo">FR FR!</p>
+            <p class="card__text card__text--yolo">100!</p>
+            <p class="card__text card__text--yolo">Yolo!</p>
+        </div>
+
+        <div class="card card--eco">
+            <h2 class="card__header card__header--eco">Nature</h2>
+            <img src="./images/lego-tree.png" class="card__img card__img--eco">
+            <p class="card__text card__text--eco">Brutal</p>
+            <p class="card__text card__text--eco">Cold</p>
+            <p class="card__text card__text--eco">CSS with Scales!</p>
+            <p class="card__text card__text--eco">Tooth and claw.</p>
         </div>
     </div>
 </body>

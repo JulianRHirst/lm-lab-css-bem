@@ -1,7 +1,52 @@
-/* You can delete / re-write this img class  */
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Yatra+One&display=swap');
 
-img {
-    max-width: 200px;
+body {
+    font-family: 'Amiko';
 }
 
-/* Happy coding! */
+
+.container {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 20%;
+    min-width: 200px;
+}
+
+.card_header {
+    font-size: 2rem;
+    font-family: 'Yatara One';
+}
+
+.card__img {
+    border-width: 3;
+    width: 100%;
+}
+
+.card__text {
+    font-size: 1rem;
+}
+
+.card--light {
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.card--yolo {
+    background-color: magenta;
+    color: yellow;
+}
+
+.card--dark {
+    background-color: #111111;
+    color: white;
+}
+
+.card--eco {
+    background-color: lightgreen;
+    color: brown;
+}
