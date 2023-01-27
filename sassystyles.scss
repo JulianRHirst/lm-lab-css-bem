@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Aboreto&display=swap');
+
+$body__font-family: 'Amiko';
+$card__header__font-family: 'Aboreto';
+
+// NOTE SASS WILL NOT ALLOW MEDIA QUERIES TO BE USED FOR VARIABLE DECLARATIONS
+// BECAUSE IT IS A PRE-PROCESSOR!
+// So we have to use css vars.
+
+@media (prefers-color-scheme: dark) {
+:root{
+    --body__background-color: #EEEEEE;
+    --body__text-color: #111111;
+}
+}
+
+@media (prefers-color-scheme: light) {
+:root{
+    --body__background-color: #111111;
+    --body__text-color: #EEEEEE;
+}
+}
+
+body {
+    font-family: $body__font-family;
+    background-color: var(--body__background-color);
+    color: var(--body__text-color);
+    font-size: 1rem;
+}
+
+.container {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 20%;
+    min-width: 200px;
+
+    H2 {
+        font-size: 2rem;
+        font-family: $card__header__font-family;    
+    }
+
+    img {
+        border-width: 3;
+        width: 100%;  
+    }
+    
+}
+
+
+.card__quote {
+    font-style: italic;
+}
+
+.card--light {
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.card--yolo {
+    background-color: magenta;
+    color: yellow;
+}
+
+.card--dark {
+    background-color: #111111;
+    color: white;
+}
+
+.card--eco {
+    background-color: lightgreen;
+    color: brown;
+}

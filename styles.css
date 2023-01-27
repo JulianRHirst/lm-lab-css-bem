@@ -1,56 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Yatra+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Amiko&family=Aboreto&display=swap");
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body__background-color: #EEEEEE;
+    --body__text-color: #111111;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --body__background-color: #111111;
+    --body__text-color: #EEEEEE;
+  }
+}
 body {
-    font-family: 'Amiko';
+  font-family: "Amiko";
+  background-color: var(--body__background-color);
+  color: var(--body__text-color);
+  font-size: 1rem;
 }
 
-
 .container {
-    display:flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .card {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    width: 20%;
-    min-width: 200px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 20%;
+  min-width: 200px;
 }
-
-.card_header {
-    font-size: 2rem;
-    font-family: 'Yatara One';
+.card H2 {
+  font-size: 2rem;
+  font-family: "Aboreto";
 }
-
-.card__img {
-    border-width: 3;
-    width: 100%;
+.card img {
+  border-width: 3;
+  width: 100%;
 }
 
 .card__quote {
-    font-style: italic;
-}
-
-.card__text {
-    font-size: 1rem;
+  font-style: italic;
 }
 
 .card--light {
-    background-color: #EEEEEE;
-    color: black;
+  background-color: #EEEEEE;
+  color: black;
 }
 
 .card--yolo {
-    background-color: magenta;
-    color: yellow;
+  background-color: magenta;
+  color: yellow;
 }
 
 .card--dark {
-    background-color: #111111;
-    color: white;
+  background-color: #111111;
+  color: white;
 }
 
 .card--eco {
-    background-color: lightgreen;
-    color: brown;
+  background-color: lightgreen;
+  color: brown;
 }
+
+/*# sourceMappingURL=styles.css.map */
